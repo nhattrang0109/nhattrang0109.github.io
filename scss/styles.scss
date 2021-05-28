@@ -350,7 +350,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../images/cover.jpeg);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -393,7 +393,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-hover, 0.8);
+    // background: rgba($base-color-hover, 0.8);
     z-index: 1;
 }
 
@@ -653,6 +653,12 @@ footer {
 
 .project-image {
     float: left;
+    // height: 30vh;
+
+    img {
+        height: 30vh;
+        max-width: fit-content;
+    }
 }
 
 .project-info {
@@ -660,7 +666,12 @@ footer {
     // top: 50%;
     // transform: translateY(-50%);
     // margin-left: 300px;
-    padding: 15px;
+    justify-self: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* justify-items: center; */
+    align-self: center;
+    flex: 1;
 
     h3 {
         font-size: 1.5em;
@@ -960,13 +971,14 @@ footer {
     }
 
     .project-image {
-        display: none;
+        display: flex;
+        flex-direction: column;
     }
 
     .project-info {
         position: relative;
         margin: 0;
-        padding: 30px 15px;
+        // padding: 30px 15px;
         top: auto;
         transform: none;
     }
