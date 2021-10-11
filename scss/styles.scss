@@ -34,7 +34,7 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #0994f1;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -43,9 +43,10 @@ $background-alt: #f2f2f5;
 
 // Define border colors
 $border: #dcd9d9;
+// #337ab7
 
 // Define text colors
-$heading: #374054;
+$heading: #1e2127;
 $text: #74808a;
 
 /*
@@ -283,7 +284,7 @@ footer {
 
     a {
         display: block;
-        color: $text;
+        color: black;
         padding: 10px;
 
         &:hover {
@@ -294,9 +295,9 @@ footer {
 
 .btn-rounded-white {
     display: inline-block;
-    color: #fff;
+    color: #337ab7;
     padding: 15px 25px;
-    border: 3px solid #fff;
+    border: 3px solid #337ab7;
     border-radius: 30px;
     @include transition();
 
@@ -369,7 +370,7 @@ footer {
     }
 
     h1 {
-        color: #fff;
+        color:#337ab7;
         font-weight: 900;
         font-size: 5em;
         text-transform: uppercase;
@@ -378,7 +379,7 @@ footer {
     }
 
     h2 {
-        color: lighten($base-color, 25%);
+        color: $base-color;
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px;
@@ -393,7 +394,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    // background: rgba($base-color-hover, 0.8);
+    background: rgba($base-color-hover, 0.2);
     z-index: 1;
 }
 
@@ -405,7 +406,7 @@ footer {
     text-align: center;
     z-index: 10;
     bottom: 15px;
-    color: #fff;
+    // color: #fff;
 
     span {
         cursor: pointer;
@@ -414,7 +415,7 @@ footer {
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        border: 3px solid lighten($base-color, 25%);
+        border: 3px solid lighten(#1e2127, 25%);
         text-align:center;
     }
 
@@ -644,7 +645,7 @@ footer {
 .project {
     display: flex;
     position: relative;
-    max-width: 900px;
+    max-width: 90vw;
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: #fff;
@@ -797,6 +798,15 @@ footer {
             box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         }
     }
+    // .spotlight {
+    //     max-width: 70%;
+    //     // max-height: 50%;
+    // }
+
+    // #spotlight-img{
+    //     max-width: 40vw;max-height: 60vh
+    // }
+
 }
 
 /*
